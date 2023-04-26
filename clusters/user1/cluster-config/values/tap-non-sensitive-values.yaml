@@ -12,7 +12,7 @@ tap_install:
 
     profile: full # Can take iterate, build, run, view.
 
-    supply_chain: basic # Can take testing, testing_scanning.
+    supply_chain: testing # Can take testing, testing_scanning.
 
     contour:
       envoy:
@@ -41,6 +41,12 @@ tap_install:
 
     namespace_provisioner:
       controller: false
+      additional_sources:
+      - git:
+          ref: origin/main
+          subPath: clusters/user1/cluster-config/namespace-provisioner/testing-supplychain
+          url: https://github.com/dbuchko/tap-gitops.git
+        path: _ytt_lib/testing-supplychain-setup
       gitops_install:
         ref: origin/main
         subPath: clusters/user1/cluster-config/namespace-provisioner

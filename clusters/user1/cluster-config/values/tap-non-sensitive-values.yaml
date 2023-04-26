@@ -39,10 +39,9 @@ tap_install:
     grype:
       namespace: "default"
 
-
-namespace_provisioner:
-  controller: false
-  gitops_install:
-    ref: origin/main
-    subPath: clusters/user1/cluster-config/namespace-provisioner
-    url: https://github.com/dbuchko/tap-gitops.git
+  namespace_provisioner:
+    controller: false
+    gitops_install:
+      ref: origin/main
+      subPath: clusters/user1/cluster-config/namespace-provisioner
+      url: https://github.com/dbuchko/tap-gitops.git

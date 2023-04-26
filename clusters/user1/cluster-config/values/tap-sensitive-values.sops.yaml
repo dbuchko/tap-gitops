@@ -1,15 +1,15 @@
 tap_install:
-    sensitive_values: null
-    shared:
-        image_registry:
-            project_path: ENC[AES256_GCM,data:9LGrxbzGYVpRQp3yGK6Ugr3WN5ITEGNwqNWV+wALXiJWtS2M5USK6ceCBzQCxFg4zYHFxVR3bQAMXvPUrQtx,iv:gsXq8Qp/iBLvP4FGtoDPmjDNpRl9s8FRGGaCf5cZzlA=,tag:KvA5xKT7nkdz7Ep42DGHJg==,type:str]
-            username: ENC[AES256_GCM,data:oQ2pIb89nP/mGUWrsJs3Z2gWmrmVDEztSbAaETL9AmU=,iv:ETNbTSWfl13xROmUfXfR4UYB6gPTvGwuG9dIOTj+l2M=,tag:vBhXiLPReFIlpspg61aWgg==,type:str]
-            password: ENC[AES256_GCM,data:RtzsMStYwBljqQ6HnY9QWuGrbT2isLLXCbUNYowfuPuXFmOV93d0AYgE3Yu/oAzmjzpYtg==,iv:eLsOdJAy9Ahj87/4IWVOofTtHhlUBLX4hGdOaTE/sRo=,tag:jRxusWyFRRteMqWHoF/DJQ==,type:str]
-        #ENC[AES256_GCM,data:bmMDiwKYy3vJONGie+Iia+WEsHiu5h92LfhHgG4xLUwf17wPM4nZjLY06JLaU4Udwe3VtzuxcCXW5/R9Xjw4h4VhfRrnyRn1BXoItuHjpS7QXyEtX68RJ9TME5a4wBIJqi8VT2MGp08WZtVFfGf4RawL,iv:RJ+6fX7TDAqyIDB6ZriYhZYwwHUDLf/8KvHzYFoZbmU=,tag:YsJOYp7esrKqSGqaWHwvpg==,type:comment]
-        ootb_supply_chain_basic:
-            gitops:
-                #ENC[AES256_GCM,data:AVza/RLN/LRc1Ae4ag9RMjHwh7Mq86epVLwCKQ+kC2KDnTDJP+61dAaVVpPrEVPanY/sKltgzGDOmajUbeWts9pdWh9XyLi0A6wlnaq4DrgJ2Q==,iv:n7ZX0eULxXC9vmu2kWHlHaKm7dqjmvlqXVERBRaWV3Y=,tag:a5DZiGnvLVo7AlsnD826Gg==,type:comment]
-                ssh_secret: ENC[AES256_GCM,data:y70FHjT+uhTBTdFH67hudJ1N5pGs28tXt+74IcNM/WiG0e92Mk+D7bx8hSYUFngVEe9Fv9T9SjDI0PqxEOi9uR5/+zReEo52ksFeVpbitiVFscpP9UL6hrY44ua2,iv:s2wTLAiIMR93kOnYhS9r2mb9s99J3P/jUOTTnzif70Y=,tag:N0mB5id/8uuBXbryOi5Suw==,type:str]
+    sensitive_values:
+        shared:
+            image_registry:
+                project_path: ENC[AES256_GCM,data:JqXHFa6FGoyH7INb8+lhPPWl6jjndResRJTe3KcwrsCxatdX8+kp7KZM9WDcbFbI9Xf2voiTStCLVxtGB/nI,iv:8U3SveBH0uVXd4dHhfEbDheBshWD/IhQYxDySBVIelc=,tag:0k5tIPzzgBUpCj1+8ow58g==,type:str]
+                username: ENC[AES256_GCM,data:wEJ3nQq1IpnCbcjPO04Z0t97iJQoQQClu/GEjAOKyBo=,iv:loN4aGhmBr6RA1tOGNJyHzcgbTA+cBpr0JVRIrfSC68=,tag:r4f0UDW4aWEBD63evnIxtw==,type:str]
+                password: ENC[AES256_GCM,data:65AswXu6W3K5ecn8r92CU6/yAA5Ij5tjdD25LvAU7//g4xSzjLHXSgVTN1b23HR+T2rh/w==,iv:kUs9ftRTS7oZPClutvzlvPVrkg2bVD0pjPtN9ql8y0E=,tag:0glalBYaIbsV//yXqsLDRg==,type:str]
+            #ENC[AES256_GCM,data:tBmpdL5UJiXRrXScSAeER4QCj5MkfPBwZEYIFooBV82XWExQe1NPCF9+omiLvkG5M0xT6HIbAFUjoRCQBW0OxQSXtwhwx2D6+6T6NaPCwTPm5Fsra3T1zpjkmDNg2H5e8t5lzPtkW/UR8Leyp/Rc4JJJ,iv:+VPbeeHQyz5FFKB9pRbAl476x9O+gze/iDTBOXq/gKM=,tag:/TEh7ggregredlA7BfNOmg==,type:comment]
+            ootb_supply_chain_basic:
+                gitops:
+                    #ENC[AES256_GCM,data:Y5ckq4BOT5NZ/mp1uLwSksfD0sfptNo12LGH/Mr93aX9FKIe538b4WOAgEWqaX4C4Y8ZPk3p+ReIstXH8UR4JeId5HDqAdag6tA4eRnnFmCc1w==,iv:R+3FxnyLCExFwCnaVOIJlhMNURMe/smYgG0o61FFvQ4=,tag:J1bxt3kUq3WzMhfpkVKcKQ==,type:comment]
+                    ssh_secret: ENC[AES256_GCM,data:F7zBX0A7jzXPffmSBJG9NYvOBc6TOeTHOg4bLJiCn3Eg77VHoInOeofkF+Jt2W+MhV470jnH1ONvbvjjqE7GseynPOzq2MYP7UlNjwJv4O8+LxTpQwdlzAecN0Zz,iv:z5aF83iL2EIUV0QSKFkt2Qutne1LEhJDr5DNJzJBRDM=,tag:BOWrazYWX87kSf93LZQ4tA==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -25,8 +25,8 @@ sops:
             S0J2Ujd3bGtFSzFtcWJCUUhhNjcyKzAKI8qt/uDshN5TSTICBLJ2lO2+jAFOrovy
             GpvOckTGXuoa6hng76yfv/3kMMT99VCS0585xw7bUDm438zG8nyYqA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-04-25T20:59:42Z"
-    mac: ENC[AES256_GCM,data:jMgwhKvzGMaTr9eazzxri2yThiDb78gaY3X3nGKf+zLJeR3Jha+NivH1zuimh99OIOfozPSbiPBKlJWXr6WXSbYoksfvlG+y2XOGGr8s2LywWm+KnbL5SGc0iEJd+5jE4QvnehFR3M8nG/17A2dfN1FL7JpclmJu16oK5HTbdnA=,iv:OhfCfXxqHRFVqnnQ8DckSo+bP9C+KG0MWGTFcvpozrI=,tag:gXBdug15skWT3Yu83hZ9tA==,type:str]
+    lastmodified: "2023-04-26T14:24:47Z"
+    mac: ENC[AES256_GCM,data:17V0qAIRraYenVkwzT6z/1DNF5xFEOXQz7Rmp7sDc1Pc1GnzdsUcCTNSzkgVbNldbsTINDcfoFFsgUmaRKS7AvAn+9l4zBZtdvpliGlg7zYlmnDejYMUa14BSd9lIOL/RinNROsT+fYyM9NG2rFB5aFnA4uQQwQ079jqtdeBdJg=,iv:TbS8nF42StW9rLa3L34xkc8dtokaPvIicxf9CRXzOb0=,tag:Avx6UITfv38s/OwF2Rq1Iw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3

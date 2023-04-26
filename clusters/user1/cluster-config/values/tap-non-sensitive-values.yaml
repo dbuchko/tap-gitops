@@ -1,42 +1,44 @@
+---
 tap_install:
-  shared:
-    ingress_domain: "user1.tap-green.azure.tanzu-studio.com"
+  values:
+    shared:
+      ingress_domain: "user1.tap-green.azure.tanzu-studio.com"
 
-  ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
+    ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
-  #The above keys are minimum numbers of entries needed in tap-values.yaml to get a functioning TAP Full profile installation.
+    #The above keys are minimum numbers of entries needed in tap-values.yaml to get a functioning TAP Full profile installation.
 
-  #Below are the keys which may have default values set, but can be overridden.
+    #Below are the keys which may have default values set, but can be overridden.
 
-  profile: full # Can take iterate, build, run, view.
+    profile: full # Can take iterate, build, run, view.
 
-  supply_chain: basic # Can take testing, testing_scanning.
+    supply_chain: basic # Can take testing, testing_scanning.
 
-  ootb_supply_chain_basic: # Based on supply_chain set above, can be changed to ootb_supply_chain_testing, ootb_supply_chain_testing_scanning.
-    gitops:
-      ssh_secret: "" # Takes "" as value by default; but can be overridden by setting a different value.
+    ootb_supply_chain_basic: # Based on supply_chain set above, can be changed to ootb_supply_chain_testing, ootb_supply_chain_testing_scanning.
+      gitops:
+        ssh_secret: "" # Takes "" as value by default; but can be overridden by setting a different value.
 
-  contour:
-    envoy:
-      service:
-        type: LoadBalancer # This is set by default, but can be overridden by setting a different value.
+    contour:
+      envoy:
+        service:
+          type: LoadBalancer # This is set by default, but can be overridden by setting a different value.
 
-  tap_gui:
-    service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
-    metadataStoreAutoconfiguration: true # Create a service account, the Kubernetes control plane token and the requisite app_config block to enable communications between Tanzu Application Platform GUI and SCST - Store.
-    app_config:
-      catalog:
-        locations:
-          - type: url
-            target: https://github.com/asaikali/tap-gui-sample-catalog/blob/main/catalog-info.yaml
+    tap_gui:
+      service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
+      metadataStoreAutoconfiguration: true # Create a service account, the Kubernetes control plane token and the requisite app_config block to enable communications between Tanzu Application Platform GUI and SCST - Store.
+      app_config:
+        catalog:
+          locations:
+            - type: url
+              target: https://github.com/asaikali/tap-gui-sample-catalog/blob/main/catalog-info.yaml
 
-  metadata_store:
-    ns_for_export_app_cert: "dev"
-    app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
+    metadata_store:
+      ns_for_export_app_cert: "dev"
+      app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
 
-  scanning:
-    metadataStore:
-      url: "" # Configuration is moved, so set this string to empty.
+    scanning:
+      metadataStore:
+        url: "" # Configuration is moved, so set this string to empty.
 
-  grype:
-    namespace: "dev"
+    grype:
+      namespace: "dev"

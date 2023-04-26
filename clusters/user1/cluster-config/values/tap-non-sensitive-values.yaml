@@ -29,7 +29,7 @@ tap_install:
               target: https://github.com/asaikali/tap-gui-sample-catalog/blob/main/catalog-info.yaml
 
     metadata_store:
-      ns_for_export_app_cert: "dev"
+      ns_for_export_app_cert: "default"
       app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
 
     scanning:
@@ -37,4 +37,4 @@ tap_install:
         url: "" # Configuration is moved, so set this string to empty.
 
     grype:
-      namespace: "dev"
+      namespace: "default"

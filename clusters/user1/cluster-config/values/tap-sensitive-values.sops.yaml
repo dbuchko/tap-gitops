@@ -9,7 +9,7 @@ tap_install:
         ootb_supply_chain_basic:
             gitops:
                 #ENC[AES256_GCM,data:HgYvebQ3hQGdZxWB27tadMiTs2ooMttLcZlzdUnSLV6FkW9YD/J+3kah+p5GIyeGxmwWDWwCHTyXWHDQsD5SxJ/WQ5nZRV2T64oZptC0b9gv9A==,iv:m8Ba0ISA75Zmnr+W/WHEocN3rZ7GlEMOmgxX+IYSP58=,tag:EqQYtfOUyAeE02H9eWPnug==,type:comment]
-                ssh_secret: ENC[AES256_GCM,data:stPlz4vyziJ93y+8ZqYa+aQ5XuJGYuuqvPPzgbUaFgMGc3n6xEHngh1BJ+H61EM3WxSQOP+SnmZneeq/V7f7BZTo3AxFfGCH6qJ6AifynuBob0MyjQ4fd5TCwBhU,iv:f/adK6UkSmoXesXhyC11QU2d5iAF4f3TBovlMF4KOzs=,tag:bu8Gl/xguG1GUiTrAsbIiA==,type:str]
+                ssh_secret: ""
 sops:
     kms: []
     gcp_kms: []
@@ -25,8 +25,8 @@ sops:
             S0J2Ujd3bGtFSzFtcWJCUUhhNjcyKzAKI8qt/uDshN5TSTICBLJ2lO2+jAFOrovy
             GpvOckTGXuoa6hng76yfv/3kMMT99VCS0585xw7bUDm438zG8nyYqA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-04-26T14:30:48Z"
-    mac: ENC[AES256_GCM,data:oWqisn+BLwtIZjceQ7CIToyFoKEaYV74bXuGK51CYzNQEDeRKBrhcQdvnFgjzzJ40LvnAWIdXKIEDMtlJVrKUAEVG5W3N50ABykmESSI9tAvmu9MtNYfAO/g+W0GWfeHjKk18w+Q0xaP4MQLA+Ypya0zzsAbG1ELpDQck+C+/Ik=,iv:cS+q6lSvvlHLp1TE2V4ugUDyk7pC5BGfX+p8zOMH0Pw=,tag:6G8vLq0rTkR7lYj+Py4heQ==,type:str]
+    lastmodified: "2023-04-26T20:16:08Z"
+    mac: ENC[AES256_GCM,data:hqz8neP6BjRDXgpuiwdwGwtf0R9GxEJ/FD7NVrSNHyuXPriYirWMh9YHLG1bpF8TgH7YqQTCvui6O2CF7M0dT1yoVn0fMpBOqrgyYGM4bgeyb6N1uRF5ZdWtk/38nvk5FBjxStU6FS/A/KXv01/YHqDGqU3FmsDPnMgD7Kp6Ejc=,iv:l7zZL/bV/ZESLKQC+37sn39tSzoGK31ZVccHDvAt5rU=,tag:Zh2GReVGl641slZ1NlJHVw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3

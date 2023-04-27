@@ -12,7 +12,7 @@ tap_install:
 
     profile: full # Can take iterate, build, run, view.
 
-    supply_chain: testing # Can take testing, testing_scanning.
+    supply_chain: testing_scanning # Can take testing, testing_scanning.
 
     contour:
       envoy:
@@ -29,7 +29,7 @@ tap_install:
               target: https://github.com/asaikali/tap-gui-sample-catalog/blob/main/catalog-info.yaml
 
     metadata_store:
-      ns_for_export_app_cert: "default"
+      ns_for_export_app_cert: "dev"
       app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
 
     scanning:
@@ -37,7 +37,7 @@ tap_install:
         url: "" # Configuration is moved, so set this string to empty.
 
     grype:
-      namespace: "default"
+      namespace: "dev"
 
     namespace_provisioner:
       controller: false
@@ -47,6 +47,11 @@ tap_install:
           subPath: clusters/user1/cluster-config/namespace-provisioner/testing-supplychain
           url: https://github.com/dbuchko/tap-gitops.git
         path: _ytt_lib/testing-supplychain-setup
+      - git:
+          ref: origin/main
+          subPath: clusters/user1/cluster-config/namespace-provisioner/testing-scanning-supplychain
+          url: https://github.com/dbuchko/tap-gitops.git
+        path: _ytt_lib/testing-scanning-supplychain-setup
       gitops_install:
         ref: origin/main
         subPath: clusters/user1/cluster-config/namespace-provisioner

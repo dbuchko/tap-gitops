@@ -38,6 +38,7 @@ tap_install:
 
     grype:
       namespace: "dev"
+      targetImagePullSecret: registry-credentials
 
     namespace_provisioner:
       controller: false

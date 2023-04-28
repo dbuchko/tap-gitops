@@ -54,11 +54,6 @@ tap_install:
       additional_sources:
       - git:
           ref: origin/main
-          subPath: clusters/user1/cluster-config/namespace-provisioner/testing-supplychain
-          url: https://github.com/dbuchko/tap-gitops.git
-        path: _ytt_lib/testing-supplychain-setup
-      - git:
-          ref: origin/main
           subPath: clusters/user1/cluster-config/namespace-provisioner/testing-scanning-supplychain
           url: https://github.com/dbuchko/tap-gitops.git
         path: _ytt_lib/testing-scanning-supplychain-setup

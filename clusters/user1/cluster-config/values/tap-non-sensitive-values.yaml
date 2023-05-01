@@ -47,10 +47,11 @@ tap_install:
 
     grype:
       namespace: "dev"
-      targetImagePullSecret: registry-credentials
+      targetImagePullSecret: image_registry
 
     namespace_provisioner:
       controller: false
+      sync_period: 30s
       additional_sources:
       - git:
           ref: origin/main

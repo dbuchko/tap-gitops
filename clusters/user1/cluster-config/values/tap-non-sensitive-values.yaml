@@ -47,7 +47,6 @@ tap_install:
 
     grype:
       namespace: "dev"
-      targetImagePullSecret: image_registry
 
     namespace_provisioner:
       controller: false

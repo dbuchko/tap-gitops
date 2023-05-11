@@ -48,4 +48,10 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
 
 1. Continue and install TAP using the instructions from the documentation [here](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.5/tap/install-gitops-sops.html#create-a-new-git-repository-2).
 
+  Because your account does not have `sudo` access, you'll need to add the carvel tools to your path as follows:
+
+  ```bash
+  export PATH=$PATH:$HOME/kapp:$HOME/ytt
+  ```
+  
 

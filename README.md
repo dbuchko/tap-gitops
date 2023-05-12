@@ -18,6 +18,7 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
 1. The following environment variables have been created for you, that provide you with all the resource access information you require.  If you prefer, you can copy them to your local machine and work from there.
     * `KUBECONFIG`: Path to your cluster config file
     * `CODE_NAME`: Instance identifier for this workshop
+    * `INGRESS_DOMAIN`: Assigned domain where TAP GUI, workloads, etc. will be accessible
     * `INSTALL_BUNDLE`: Cluster Essentials SHA256
     * `INSTALL_REGISTRY_HOSTNAME`: FQDN to the ACR container registry where the TAP images have been copied to
     * `INSTALL_REGISTRY_USERNAME`: ACR username
@@ -25,6 +26,7 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
     * `LOCAL_REGISTRY_REPO`: Local ACR repo for your TAP artifacts
     * `LOCAL_REGISTRY_USERNAME`: Local ACR username
     * `LOCAL_REGISTRY_PASSWORD`: Local ACR password
+    * `TAP_PKGR_REPO`: TAP packages repo (relocated to ACR for this workshop). Used by tanzu-sync.
 
 1. In your user home directory, you'll find:
    * a kubectl config file to access the cluster that's been provisioned for you
@@ -53,5 +55,5 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
   ```bash
   export PATH=$PATH:$HOME/kapp:$HOME/ytt
   ```
-  
+
 

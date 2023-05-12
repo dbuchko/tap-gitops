@@ -1,0 +1,11 @@
+tap_install:
+    sensitive_values:
+        shared:
+            image_registry:
+                project_path: # Enter the value of your $LOCAL_REGISTRY_REPO env variable here, eg. e66b460d84234f8ab296fc5f9a973dff.azurecr.io/tap-green/user1/tap
+                username: # Enter the value of your $LOCAL_REGISTRY_USERNAME env variable here, eg. e66b460d84234f8ab296fc5f9a973dff
+                password: # Enter the value of your $LOCAL_REGISTRY_PASSWORD env variable here, eg. +coFR94sn2OV20d1K+oqoU+nillf7PiYyWsrJw5oTk+ACRBq1mMK
+        # Based on supply_chain set above, can be changed to ootb_supply_chain_testing, ootb_supply_chain_testing_scanning.
+        ootb_supply_chain_basic:
+            gitops:
+                ssh_secret: # Enter the value of your github SSH key you created as part of the prerequisites, eg. github_pat_55BAYWQ...jd

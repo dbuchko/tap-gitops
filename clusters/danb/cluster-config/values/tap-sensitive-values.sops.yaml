@@ -12,7 +12,7 @@ tap_install:
         ootb_supply_chain_basic:
             gitops:
                 #ENC[AES256_GCM,data:Cdz1UFmLwX1VLuTuorIblGuRNfzHuTBUV7S5cAUyTeEwoir5Mw/x/3VourlcEYRG/SRvXvcS1KL3oFDhhM6brKtA+ZGN2J55osxllz5IwzAhGX+lp0HPyMbwkEQW6fUA+r1fLeiad6wh6EQnhQ==,iv:sdxRlo5FmdhRSJHjg0P/7DekKo8jPx+MRnqMI68C5NQ=,tag:ayVn4Xq1B2jHebhGd6YlVA==,type:comment]
-                ssh_secret: ENC[AES256_GCM,data:9PMU98Dntnj/6lufIKw6GWQ6ffDzN/O0yVpltODIKrgG8GgseNWidw==,iv:p1pkaT6MX+0tX7PsVU/kuuVWnbkxaAAYlB6QT4GiQtY=,tag:kDjvfL/E0Lw9YmtHVwuI4A==,type:str]
+                ssh_secret: ENC[AES256_GCM,data:wFgJgyzsh6Drt1imK+75sMiTg9FTbU1KD3SMfqP06EuHV8jILK7CwKyAPdfa2xdhrawDFSwjnBJNtYhqq6TFYeRXRZV/whzP82Bwtt31+Z1ESkhU4L2KQ8LUe9aG,iv:UFfAIfwCMiEwbRLyPdoBKmiAGM9BIVXrF5ZdZDQ7xc0=,tag:x/X/GBbholnvQhz6GOXasA==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -28,8 +28,8 @@ sops:
             Tndha2h4bVl5QWpROHk3NDAzYXF6Y1EKtEoQAww3T5B4+g+CT9ueCO98GmcSAY+e
             NA9MJHuCMFZMJxojDNBgPTa7FcHmggoOxuA1z3iCXmrthrTfjWOGfg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-05-12T18:59:49Z"
-    mac: ENC[AES256_GCM,data:4RqBBu8ufmNiLkkJ+RRKsVit9aetXwuXtWMDXIbMpJejNdmf4g3LLS73KU1NF1+h+kWiP+7c/CxmGTyxE4ZLsnwpIGMJKWm6Bd57ArEG996UE/147V8kmc4FU532s4/lX9luOwuSmaRZfNoQs0LuI7cKblsoh4xfTyllesaHBas=,iv:tB+F4NRGSxukTGjLtUujOX8WLrc/vrDaC8NmaF/eB3o=,tag:SlQd7Yz9UZtWUmza8Bv+Sw==,type:str]
+    lastmodified: "2023-05-12T20:10:39Z"
+    mac: ENC[AES256_GCM,data:VAmar9pw2JDPXhKy1rHDcY8fGeIQlQeAjiSPfDsT9IGnMFQLKv5kUkTrrsDxCweWRke34tiC4p9PuqDjJrHUdpGiuE4tQ/kWYKd/CBJOqiKGxxPUsiBoqwAVG23hsxvnYYU1r2ChHzlFs3XBfut1EtGhGB5P3L6T43bCPFNiZHU=,iv:8S/KzsuTyNqFXtxv8u+fphBIner9wJXE9mDLgewcCbk=,tag:nA0y9RPcXwQXrqpp/K3yjg==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3

@@ -1,3 +1,0 @@
-tap_install:
-  package_repository:
-    oci_repository: e66b460d84234f8ab296fc5f9a973dff.azurecr.io/tap-green/tap-packages

@@ -2,7 +2,7 @@
 tap_install:
   values:
     shared:
-      ingress_domain: "user1.tap-green.azure.tanzu-studio.com"
+      ingress_domain: # Enter the value of your $INGRESS_DOMAIN environment variable, eg. "user1.tap-green.azure.tanzu-studio.com"
 
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
@@ -26,7 +26,7 @@ tap_install:
         catalog:
           locations:
             - type: url
-              target: https://github.com/asaikali/tap-gui-sample-catalog/blob/main/catalog-info.yaml
+              target: https://github.com/dbuchko/tap-gui-catalogs/blob/main/yelb-catalog/catalog-info.yaml  # No need to change this
 
     metadata_store:
       ns_for_export_app_cert: "default"

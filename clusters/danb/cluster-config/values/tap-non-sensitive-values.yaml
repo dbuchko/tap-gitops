@@ -1,0 +1,41 @@
+---
+tap_install:
+  values:
+    shared:
+      ingress_domain: # Enter the value of your $INGRESS_DOMAIN environment variable, eg. "user1.tap-green.azure.tanzu-studio.com"
+
+    ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
+
+    #The above keys are minimum numbers of entries needed in tap-values.yaml to get a functioning TAP Full profile installation.
+
+    #Below are the keys which may have default values set, but can be overridden.
+
+    profile: full # Can take iterate, build, run, view.
+
+    supply_chain: basic # Can take testing, testing_scanning.
+
+    contour:
+      envoy:
+        service:
+          type: LoadBalancer # This is set by default, but can be overridden by setting a different value.
+
+    tap_gui:
+      service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
+      metadataStoreAutoconfiguration: true # Create a service account, the Kubernetes control plane token and the requisite app_config block to enable communications between Tanzu Application Platform GUI and SCST - Store.
+      app_config:
+        catalog:
+          locations:
+            - type: url
+              target: https://github.com/dbuchko/tap-gui-catalogs/blob/main/yelb-catalog/catalog-info.yaml  # No need to change this
+
+    metadata_store:
+      ns_for_export_app_cert: "default"
+      app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
+
+    scanning:
+      metadataStore:
+        url: "" # Configuration is moved, so set this string to empty.
+
+    grype:
+      namespace: "default"
+

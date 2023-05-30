@@ -30,6 +30,8 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
 
 1. In your user home directory, you'll find:
    * a kubectl config file to access the cluster that's been provisioned for you
+
+1. In your user home `downloads` directory, you'll find:
    * a `tanzu-cluster-essentials` tarball
    * a `tanzu-gitops-ri` tarball
 
@@ -42,7 +44,7 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
 1. Install cluster essentials into your cluster:
 
    ```bash
-   tar xvf tanzu-cluster-essentials-linux-amd64-1.5.0.tgz
+   tar xvf downloads/tanzu-cluster-essentials-linux-amd64-1.5.0.tgz -C $HOME/tanzu-cluster-essentials
    ./install.sh
    ```
    Ref docs [here](https://docs.vmware.com/en/Cluster-Essentials-for-VMware-Tanzu/1.5/cluster-essentials/deploy.html#deploy-onto-cluster-5).

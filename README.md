@@ -56,7 +56,13 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
    * Keep in mind the files that have already been downloaded into `downloads` folder of your user home directory.
    * All values required for the installation have been provided in the environment variables above.
 
-   Once you get TAP with the initial basic supply chain installed, provide the instructor the IP address of your Contour system ingress, , and they will create the DNS entry for the TAP GUI.  The URL format will be you can access the TAP GUI at the following URL:
+   Once you get TAP with the initial basic supply chain installed, provide the instructor the external IP address of your Contour system ingress using
+   
+   ```bash
+   kubectl get service envoy -n tanzu-system-ingress
+   ```
+
+   The instructor will create the DNS entry for the TAP GUI.  The URL format will be you can access the TAP GUI at the following URL:
 
       [https://tap-gui.$USER.$CODE_NAME.azure.tanzu-studio.com](https://tap-gui.$USER.$CODE_NAME.azure.tanzu-studio.com).  
       

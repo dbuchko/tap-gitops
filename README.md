@@ -52,10 +52,16 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
 
 1. Continue and install TAP using the instructions from the documentation [here](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.5/tap/install-gitops-sops.html#create-a-new-git-repository-2).
 
-  Because your account does not have `sudo` access, you'll need to add the carvel tools to your path as follows:
+   Once you get TAP with the initial basic supply chain installed, provide the instructor the IP address of your Contour system ingress, , and they will create the DNS entry for the TAP GUI.  The URL format will be you can access the TAP GUI at the following URL:
+   
+      [https://tap-gui.$USER.$CODE_NAME.azure.tanzu-studio.com](https://tap-gui.$USER.$CODE_NAME.azure.tanzu-studio.com).  
+      
+      eg. [https://tap-gui.user1.tap-yellow.azure.tanzu-studio.com](https://tap-gui.user1.tap-yellow.azure.tanzu-studio.com)
 
-  ```bash
-  export PATH=$PATH:$HOME/kapp:$HOME/ytt
-  ```
+   Because your account does not have `sudo` access, you'll need to add the carvel tools to your path as follows:
+
+     ```bash
+     export PATH=$PATH:$HOME/kapp:$HOME/ytt
+     ```
 
 

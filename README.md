@@ -6,8 +6,15 @@ This reference implementation is pre-configured to install Tanzu Application Pla
 
 For detailed documentation, refer to [VMware Tanzu Application Platform Product Documentation](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.5/tap/install-gitops-intro.html).
 
+# Prerequisites
+1.	Ability to SSH into a remote (public facing) jumpbox using a private key file (to be provided)
+2.	An account on https://github.com, with the ability to create a new repository
+3.	An SSH key for your Github account.  (Refer to instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh).
+
 
 # Workshop Attendee Instructions
+
+Each user has their own AKS cluster.  There is a single shared registry for everyone.  A jumpbox has been created with an account for each user.  You should have received the username and private key file to SSH into the jumpbox.  TAP installation files have been installed in each users `downloads` subdirectory.
 
 1. The URL of the jumpbox is `jumpbox.$CODE_NAME.azure.tanzu-studio.com`, where `$CODE_NAME` is provided by the instructor.  SSH into the jumpbox using the provided credentials.  eg.
 

@@ -52,9 +52,12 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
 
 1. Continue and install TAP using the instructions from the documentation [here](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.5/tap/install-gitops-sops.html#create-a-new-git-repository-2).  There are some things to note before starting:
 
+   * Sample values files can be found [here](https://github.com/dbuchko/tap-gitops/tree/main/clusters/samples/01-basic)
    * You must create and use your own github repo to manage your installation.
    * Keep in mind the files that have already been downloaded into `downloads` folder of your user home directory.
    * All values required for the installation have been provided in the environment variables above.
+   * TAP images have already been copied to the Azure registry.
+   * TAP packages are located in the Azure registry under `$CODE_NAME/tap-packages`
 
    Once you get TAP with the initial basic supply chain installed, provide the instructor the external IP address of your Contour system ingress using
    
@@ -68,10 +71,5 @@ For detailed documentation, refer to [VMware Tanzu Application Platform Product 
       
       eg. [https://tap-gui.user1.tap-yellow.azure.tanzu-studio.com](https://tap-gui.user1.tap-yellow.azure.tanzu-studio.com)
 
-   Because your account does not have `sudo` access, you'll need to add the carvel tools to your path as follows:
-
-     ```bash
-     export PATH=$PATH:$HOME/kapp:$HOME/ytt
-     ```
 
 

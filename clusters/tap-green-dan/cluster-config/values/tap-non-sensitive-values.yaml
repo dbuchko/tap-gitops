@@ -2,7 +2,7 @@
 tap_install:
   values:
     shared:
-      ingress_domain: # Enter the value of your $INGRESS_DOMAIN environment variable, eg. "user1.tap-green.azure.tanzu-studio.com"
+      ingress_domain: dan.tap-green.azure.tanzu-studio.com # Enter the value of your $INGRESS_DOMAIN environment variable, eg. "user1.tap-green.azure.tanzu-studio.com"
 
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 

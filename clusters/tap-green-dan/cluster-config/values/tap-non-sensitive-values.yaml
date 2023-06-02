@@ -45,5 +45,5 @@ tap_install:
       additional_sources:
       gitops_install:
         ref: origin/main
-        subPath: clusters/tap-green/cluster-config/namespace-provisioner
+        subPath: clusters/tap-green-dan/cluster-config/namespace-provisioner
         url: https://github.com/dbuchko/tap-gitops.git

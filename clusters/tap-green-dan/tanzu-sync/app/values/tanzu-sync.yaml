@@ -1,0 +1,7 @@
+---
+git:
+  url: https://github.com/dbuchko/tap-gitops.git
+  ref: origin/main
+  sub_path: clusters/tap-green-dan/cluster-config
+tap_package_repository:
+  oci_repository: 0afdd6c41b214c569b4b122c4cfba6a2.azurecr.io/tap-green/tap-packages

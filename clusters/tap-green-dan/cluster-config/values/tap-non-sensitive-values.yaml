@@ -38,3 +38,12 @@ tap_install:
 
     grype:
       namespace: "default"
+
+    namespace_provisioner:
+      controller: false
+      sync_period: 30s
+      additional_sources:
+      gitops_install:
+        ref: origin/main
+        subPath: clusters/tap-green/cluster-config/namespace-provisioner
+        url: https://github.com/dbuchko/tap-gitops.git

@@ -20,7 +20,7 @@ tap_install:
         # Takes "" as value by default; but can be overridden by setting a different value.
         ssh_secret: ""
       registry:
-        server: "e66b460d84234f8ab296fc5f9a973dff.azurecr.io/tap-green/dan/tap"
+        server: "0afdd6c41b214c569b4b122c4cfba6a2.azurecr.io/tap-green/dan/tap"
         repository: "src"
 
     contour:

@@ -3,7 +3,8 @@ tap_install:
   values:
     shared:
       ingress_domain: # Enter the value of your $INGRESS_DOMAIN environment variable, eg. "user1.tap-green.azure.tanzu-studio.com"
-
+      kubernetes_version: "1.25.3"
+  
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
     #The above keys are minimum numbers of entries needed in tap-values.yaml to get a functioning TAP Full profile installation.

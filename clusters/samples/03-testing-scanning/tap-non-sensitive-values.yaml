@@ -3,7 +3,7 @@ tap_install:
   values:
     shared:
       ingress_domain: "user1.tap-green.azure.tanzu-studio.com"
-      kubernetes_version: "1.25.3"
+      kubernetes_version: "1.25.6"
 
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 

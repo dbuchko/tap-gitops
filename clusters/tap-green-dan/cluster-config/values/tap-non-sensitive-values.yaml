@@ -17,9 +17,6 @@ tap_install:
 
     # Based on supply_chain set above, can be changed to ootb_supply_chain_testing, ootb_supply_chain_testing_scanning.
     ootb_supply_chain_testing_scanning:
-      gitops:
-        # Takes "" as value by default; but can be overridden by setting a different value.
-        ssh_secret: ""
       registry:
         server: "0afdd6c41b214c569b4b122c4cfba6a2.azurecr.io/tap-green/dan/tap"
         repository: "src"
